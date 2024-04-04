@@ -1,0 +1,23 @@
+.photo {
+  padding: var(--base-padding);
+  background-color: var(--light);
+  outline: 1px var(--dark);
+  border-radius: 0.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.photo__image {
+  background-color: var(--grey);
+  border-radius: 0.1em;
+}
+
+.photo__text {
+  display: inline-block;
+  margin-top: calc(var(--base-margin) / 2);
+  min-height: 1em;
+  font-weight: 700;
+  font-size: 2em;
+}

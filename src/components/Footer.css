@@ -1,0 +1,11 @@
+.footer {
+  background-color: var(--dark);
+}
+
+.footer__content {
+  min-height: 4em;
+  color: var(--light);
+  font-weight: 600;
+  font-size: 1em;
+  text-align: center;
+}

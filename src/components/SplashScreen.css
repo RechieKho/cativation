@@ -1,0 +1,58 @@
+@keyframes floating {
+  0% {
+    top: -0.5em;
+  }
+  50% {
+    top: 0em;
+  }
+  100% {
+    top: -0.5em;
+  }
+}
+
+.splash-screen {
+  background-image: linear-gradient(var(--secondary-light), var(--secondary));
+}
+
+.splash-screen__content {
+  min-height: 90dvh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.splash-screen__quote {
+  display: inline-block;
+  position: relative;
+  font-weight: 900;
+  font-size: 4em;
+  max-width: 50%;
+  animation: floating 20s ease-in-out infinite;
+}
+
+.splash-screen__photo {
+  rotate: 20deg;
+  box-shadow: var(--secondary) 0.5em 0.5em 1em;
+  position: relative;
+}
+
+.splash-screen__curve {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.splash-screen__curve__svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 139px;
+}
+
+.splash-screen__curve__path {
+  fill: var(--light);
+}

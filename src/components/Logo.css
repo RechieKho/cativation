@@ -1,0 +1,12 @@
+.logo {
+  position: sticky;
+  top: 0;
+}
+
+.logo__graphics {
+  margin-right: calc(var(--base-margin) / 5);
+}
+
+.logo__text {
+  font-weight: 800;
+}

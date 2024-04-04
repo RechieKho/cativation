@@ -1,0 +1,37 @@
+.newsletter {
+  background-color: var(--primary);
+}
+
+.newsletter__content {
+  color: var(--light);
+  min-height: 5em;
+}
+
+.newsletter__label {
+  display: block;
+  margin-bottom: var(--base-margin);
+}
+
+.newsletter__email {
+  padding: var(--base-padding);
+  outline: none;
+  border: none;
+  border-radius: 0.5em;
+  min-width: 25em;
+  margin-right: var(--base-margin);
+}
+
+.newsletter__submit {
+  padding: var(--base-padding);
+  outline: none;
+  border: none;
+  border-radius: 0.5em;
+  color: var(--light);
+  background-color: var(--dark);
+  transition: padding 250ms ease-in-out;
+}
+
+.newsletter__submit:hover {
+  cursor: pointer;
+  padding: var(--base-padding) calc(var(--base-padding) * 2);
+}

@@ -1,0 +1,15 @@
+.banner {
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+.banner__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner__content__text {
+  font-weight: 800;
+}

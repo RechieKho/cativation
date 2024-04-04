@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+/* Setup */
+:root {
+  /* Font */
+  font-family: "Nunito", sans-serif;
+
+  /* Variables */
+
+  --light: #f5f5f5;
+  --grey: #796c9f;
+  --dark: #392f5a;
+  --primary: #2ea9c4;
+  --primary-light: #a1d8eb;
+  --secondary: #ff9f1c;
+  --secondary-light: #ffbf69;
+  --base-padding: 1em;
+  --base-margin: 1em;
+  --base-max-width: 100ch;
+
+  /* Colors */
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.divider {
+  display: block;
+  background-color: var(--grey);
+  height: 1px;
+  width: 100%;
+}
+
+.scene {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.content {
+  padding: var(--base-padding);
+  width: 100%;
+  max-width: var(--base-max-width);
+}
+
+.heading {
+  font-size: 3em;
+  font-weight: 700;
+  margin-bottom: calc(var(--base-margin));
+}
+
+.paragraph {
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1.4em;
+  color: var(--grey);
+  margin-bottom: calc(var(--base-margin) / 2);
+}
