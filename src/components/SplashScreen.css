@@ -19,7 +19,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .splash-screen__quote {
@@ -33,8 +33,9 @@
 
 .splash-screen__photo {
   rotate: 20deg;
-  box-shadow: var(--secondary) 0.5em 0.5em 1em;
+  box-shadow: var(--dark) 0.1em 0.1em 0.5em;
   position: relative;
+  z-index: 1;
 }
 
 .splash-screen__curve {
@@ -54,4 +55,18 @@
 
 .splash-screen__curve__path {
   fill: var(--light);
+}
+
+@media only screen and (max-width: 800px) {
+  .splash-screen__content {
+    flex-direction: column;
+  }
+  .splash-screen__quote {
+    display: inline-block;
+    position: relative;
+    font-weight: 900;
+    font-size: 3em;
+    max-width: 80%;
+    animation: floating 20s ease-in-out infinite;
+  }
 }
