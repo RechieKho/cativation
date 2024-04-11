@@ -1,6 +1,7 @@
 .banner {
   background-color: var(--primary);
   color: var(--light);
+  height: 3em;
 }
 
 .banner__content {
